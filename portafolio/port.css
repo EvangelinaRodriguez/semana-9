@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #311960;
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(28, 9, 78);
+    color: rgb(111, 97, 196);
+    padding: 40px;
+}
+
+nav ul {
+    background-color: rgb(111, 97, 196);
+    list-style-type: none;
+    padding: 40px;
+    background-position-x: center;
+    text-align: center;
+}
+
+nav li {
+    display: inline-flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+nav li:hover {
+    background-color: rgb(28, 9, 78);
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(28, 9, 78);
+    text-align: center;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.zoom-container {
+    overflow: hidden;
+    display: inline-block;
+}
+
+.zoom-container img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+
+.zoom-container:hover img {
+    transform: scale(1.2); 
+}
+
+/* Efecto de zoom en los párrafos */
+p {
+    transition: transform 0.5s ease;
+    margin: 20px;
+    font-size: 1em; /* Puedes ajustar el tamaño de fuente según lo necesites */
+}
+
+p:hover {
+    transform: scale(1.1); /* Ajusta el valor para el nivel de zoom */
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+}
+
+.secciones {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    background-color: rgb(111, 97, 196);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.articulos {
+    flex: 1;
+    padding: 20px;
+    border-right: 2px solid black;
+}
+
+.articulos:last-child {
+    border-right: none;
+}
+
+.social-media {
+    background-color: rgb(28, 9, 78);
+    padding: 20px;
+    text-align: center;
+}
+
+.social-media h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.social-media ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-media li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: rgb(28, 9, 78);
+    font-size: 1.2em;
+}
+
+.social-media a:hover {
+    color: rgb(111, 97, 196);
+}
